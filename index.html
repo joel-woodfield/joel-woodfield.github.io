@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joel Woodfield</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #666666;
+      --link: #0b5fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #eaeaea;
+        --muted: #999999;
+        --link: #6ea8ff;
+      }
+    }
+    body {
+      margin: 0;
+      padding: 64px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    p {
+      color: var(--muted);
+      margin: 0 0 32px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .desc {
+      display: block;
+      color: var(--muted);
+      font-weight: normal;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Joel Woodfield</h1>
+    <p>Projects and things I've made.</p>
+    <ul>
+      <li>
+        <a href="/tikz-tree/">tikz-tree</a>
+        <span class="desc">Build trees and export them as TikZ.</span>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
